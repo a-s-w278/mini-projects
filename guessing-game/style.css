@@ -1,0 +1,33 @@
+body
+{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+.container-grid
+{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    justify-content:center;
+}
+.sub-container
+{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+.response-text
+{
+    display:flex;
+    justify-content:center;
+}
+.button-container
+{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    justify-content:center;
+}
+button
+{
+    height:60px;
+}
