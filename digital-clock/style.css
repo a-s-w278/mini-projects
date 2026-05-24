@@ -1,0 +1,24 @@
+.time
+{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:70px;
+    width:150px;
+    border-width:5px;
+    border-color:black;
+    color:brown;
+    padding:20px;
+    border-style:solid;
+    border-radius:20px;
+    font-family:roboto;
+    font-weight:bold;
+    font-size:40px;
+}
+body
+{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
