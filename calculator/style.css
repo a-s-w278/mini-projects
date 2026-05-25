@@ -14,6 +14,7 @@ body
 {
     display:flex;
     flex-direction:row;
+    gap:0.5px;
 }
 .display
 {
@@ -21,12 +22,22 @@ body
     color:rgb(24, 24, 24);
     text-align:right;
     height:50px;
-    width:225px;
+    width:217px;
+    border:solid 2px rgb(77, 77, 77);
+    border-radius:8px;
+    padding-right:10px;
 }
 .backspace
 {
     font-size:30px;
     color:rgb(86, 5, 5);
+    border:solid 2px rgb(77, 77, 77);
+    border-radius:10%;
+    transition:0.08s;
+}
+.backspace:active
+{
+    background-color:white;
 }
 .button-container
 {
@@ -41,5 +52,15 @@ body
     border:solid 3px rgb(44, 44, 44);
     border-radius:10%;
     height:70px;
-    
+    transition:0.08s
+}
+.button-container button:active
+{
+    transform:scale(0.95);
+    background-color:white;
+}
+button:hover
+{
+    cursor:pointer;
+    background-color:rgb(214, 214, 214)
 }

@@ -8,7 +8,7 @@ function calculate(button)
     {
         try
         {
-            out=eval(displayjs.value);
+            let out=eval(displayjs.value);
             if(isNaN(out) || !isFinite(out))
             {
                 displayjs.value="Error";
