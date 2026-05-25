@@ -1,0 +1,45 @@
+body
+{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+.main-container
+{
+    display:flex;
+    flex-direction:column;
+}
+.input-container
+{
+    display:flex;
+    flex-direction:row;
+}
+.display
+{
+    font:bold 30px sans-serif;
+    color:rgb(24, 24, 24);
+    text-align:right;
+    height:50px;
+    width:225px;
+}
+.backspace
+{
+    font-size:30px;
+    color:rgb(86, 5, 5);
+}
+.button-container
+{
+    display:grid;
+    grid-template-columns:repeat(4,70px);
+    gap:1px;
+    margin-top:1px;
+}
+.button-container button
+{
+    color:#131313;
+    border:solid 3px rgb(44, 44, 44);
+    border-radius:10%;
+    height:70px;
+    
+}
