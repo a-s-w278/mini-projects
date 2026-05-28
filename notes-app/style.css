@@ -1,0 +1,201 @@
+*
+{
+    box-sizing:border-box;
+}
+body
+{
+    margin:0;
+    min-width:100vw;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    background-color:rgb(38, 65, 3);
+}
+.mynotes-container
+{
+    width:35vw;
+    height:95vh;
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    border-radius:10px;
+    border:solid 4px black; 
+    background-color:rgb(187, 196, 184);
+    overflow:hidden;
+}
+h1
+{
+    font:bold 25px consolas;
+    color:rgb(53, 53, 53);
+    text-align:center;
+    margin-top:18px;
+    margin-bottom:15px;
+}
+ul
+{
+    list-style:none;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    gap:10px;
+    height:70vh;
+    overflow-y:auto;
+}
+.createButton
+{
+    position:absolute;
+    bottom:10px;
+    left:50%;
+    transform:translateX(-50%);
+    background-color:rgb(201, 255, 51);
+    color:black;
+    font:bold 25px consolas;
+    height:60px;
+    width:130px;
+    border:solid 3px black;
+    border-radius:6px;
+    cursor:pointer;
+    transition:0.08s;
+}
+.createButton:hover, .SaveButton:hover, .editSaveButton:hover, .editButton:hover
+{
+    background-color:rgb(163, 222, 0);
+}
+.createButton:active
+{
+    background-color:rgb(205, 255, 159);
+    transform:translateX(-50%) scale(0.95);
+}
+.rightPanel
+{
+    position:relative;
+    height:95vh;
+    width:60vw;
+    display:flex;
+    justify-content:center;
+    padding:20px;
+    background-color:white;
+    border-radius:10px;
+    border:solid 4px black;
+}
+form
+{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    height:100%;
+    gap:15px;
+}
+input
+{
+    height:60px;
+    color:rgb(40, 40, 40);
+    font:bold 20px consolas;
+    border:solid 3px black;
+    border-radius:6px;
+    padding:15px;
+}
+input::placeholder
+{
+    color:gray;
+    font:20px consolas;
+}
+textarea
+{
+    height:500px;
+    color:rgb(40, 40, 40);
+    font:17px consolas;
+    border:solid 3px black;
+    border-radius:8px;
+    padding:15px;
+    overflow-y:auto;
+}
+textarea::placeholder
+{
+    color:gray;
+    font:17px consolas;
+}
+.saveButton
+{
+    position:absolute;
+    bottom:10px;
+    height:50px;
+    width:120px;
+    background-color:rgb(201, 255, 51);
+    padding:3px;
+    font:bold 20px consolas;
+    color:black;
+    border:solid 3px black;
+    border-radius:6px;
+    left:50%;
+    transform:translateX(-50%);
+    cursor:pointer;
+    transition:0.08s;
+}
+.saveButton:active
+{
+    transform:translateX(-50%) scale(0.95);
+    background-color:rgb(186, 255, 152)
+}
+.noteButton
+{
+    overflow:hidden;
+    height:50px;
+    width:90%;
+    background-color:rgb(85, 116, 62);
+    color:rgb(15, 15, 15);
+    font:bold 20px consolas;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    transition:0.08s; 
+}
+.noteButton:hover
+{
+    background-color:rgb(81, 113, 55);
+}
+.noteButton:active
+{
+    transform:scale(0.95);
+    background-color:rgb(77, 121, 75);        
+}
+.viewBlock
+{
+    width:100%;
+}
+.viewTitle
+{
+    margin-top:15px;
+    text-align:center;
+    font:bold 25px consolas;
+    color:rgb(49, 49, 49); 
+}
+.viewContent
+{
+    white-space:pre-wrap;
+    word-break:break-word;
+    margin-top:15px;
+    margin-left:10px;
+    text-align:left;
+    font:20px consolas;
+    color:rgb(85, 85, 85); 
+    overflow-y:auto;
+}
+.editButton,.editSaveButton
+{
+    position:absolute;
+    bottom:10px;
+    height:50px;
+    width:120px;
+    border-radius:6px;
+    border:solid 3px black;
+    background-color:rgb(201, 255, 51);
+    padding:3px;
+    font:bold 20px consolas;
+    color:black;
+    left:50%;
+    cursor:pointer;
+    transform:translateX(-50%);
+}
