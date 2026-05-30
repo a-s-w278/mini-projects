@@ -10,81 +10,81 @@ body
     display:flex;
     justify-content:center;
     align-items:center;
+    background-color:rgb(29, 29, 29);
 }
 .main-container
 {
-    gap:20px;
     display:flex;
     flex-direction:column;
-    justify-content:center;
     align-items:center;
-    width:70vw;
-    height:80vh;
-    border:solid 2px rgb(59, 59, 59);
-    border-radius:10px;
-    background-color:skyblue;
+    width:35vw;
+    max-width:600px;
+    height:60vh;
+    max-height:1000px;
+    border:none;
+    border-radius:30px;
+    background-color:rgba(228, 138, 1,0.6);
+    backdrop-filter:blur(5px);
+    transition:all 0.3s ease;
+}
+.main-container:hover
+{
+    transform:scale(1.05);
+    background-color:rgba(228, 138, 1,0.62);
 }
 .searchbox
 {
-    margin-top:20px;
+    padding-left:6px;
+    margin-top:50px;
+    margin-bottom:35px;
     height:50px;
-    width:60%;
-    max-width:400px;
+    width:40%;
     border-radius:8px;
-    border:solid 3px rgb(71, 123, 255);
-    font:bold 20px consolas;
+    border:none;
+    font:bold 15px consolas;
     color:rgb(99, 99, 100); 
 }
 .weather-card
 {
-    width:60%;
-    display:flex;
+    width:200px;
+    height:150px;
+    display:none;
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    gap:8px;
-    padding:20px;
-    border-radius:6px;
-    border:solid 2px blue
+    border:none;
+    /*border:solid 3px black;*/
 }
 .icon
 {
-    height:60px;
-    width:60px;
+    height:100px;
+    width:100px;
 }
-.temp,.city,.condition,.humidity,.humidity-value,.wind,.wind-speed,.feels-like,.feels-like-value
+.temp
 {
-    font:bold 25px consolas;
-    color:black; 
+    font:bold 30px consolas;
+    color:rgb(62, 62, 62);
+    margin-top:-20px; 
 }
-.box-container
+.city,.condition
 {
-    display:flex;
+    font:bold 20px consolas;
+    color:rgb(231, 231, 231);
+    margin-top:0.3px;
+}
+.details
+{
+    margin-top:40px;
+    display:none;
     flex-direction:row;
-    height:150px;
-    width:90%;
-    gap:20px;
-    border:none;
-}
-.box
-{
-    display:flex;
     justify-content:center;
-    align-items:center;
-    flex-direction:column;
+    width:100%;
     gap:20px;
-    height:100%;
-    flex:1;
-    border-radius:6px;
-    border:solid 2px black;
+    /*border:solid 3px black;*/
 }
 .humidity,.wind,.feels-like
 {
     font:bold 25px consolas;
-    color:black;
+    color:rgb(72, 72, 72); 
 }
-.humidity-value,.wind-speed,.feels-like-value
-{
-    font:bold 20px consolas;
-    color:black;
-}
+
