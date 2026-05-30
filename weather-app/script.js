@@ -7,8 +7,6 @@ const humidity=document.querySelector(".humidity-value");
 const wind=document.querySelector(".wind-speed");
 const feel=document.querySelector(".feels-like-value");
 
-const apiKey="0f1314e761addc5943727d5e3d3d1b18";
-
 async function getWeather(event)
 {
     try
