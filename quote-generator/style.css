@@ -1,0 +1,67 @@
+*
+{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+body
+{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:black;
+}
+.main-container
+{
+    display:flex;
+    flex-direction:column;
+    background-color:rgb(139, 174, 218);
+    height:300px;
+    width:600px;
+    border:none;
+    border-radius:50px;
+    padding-left:30px;
+    padding-right:30px;
+    padding-top:20px;
+    padding-bottom:20px;
+    transition:all 0.3s ease;
+}
+.loader
+{
+    display:block;
+    
+}
+.quote
+{
+    text-align:center;
+    margin-top:30px;
+    font:bold italic 22px consolas;
+    color:rgb(50, 50, 50);
+    margin-bottom:10px;
+}
+.author
+{
+    font:bold 20px consolas;
+    color:rgb(74, 73, 73);
+    text-align:right;
+}
+.buttons
+{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    gap:70px;
+    border:none;
+    margin-top:auto;
+}
+button
+{
+    background-color:transparent;
+    border:none;
+}
+.buttons i
+{
+    font-size:30px;
+}
+
